@@ -174,17 +174,6 @@ They are not permanent protagonists and not final public canon. They are startin
 
 This makes the creative system evolvable: characters can grow, sleep, be repaired, return, split into branches, or be challenged by new candidates.
 
-## Relationship To Moirai-Era Work
-
-RedIris builds on prior Moirai-era public repository and hackathon/subnet experiment evidence.
-
-The safe lineage statement is:
-
-> RedIris builds from prior Moirai-era public repository and hackathon/subnet experiment evidence, and shifts the focus from distributed content generation to validated AI-native IP state transitions.
-
-This repository preserves the Moirai-era code structure because it already separates miner, validator, task center, and common Bittensor-facing utilities. RedIris adapts that foundation toward canon continuity, character performance, creative regression, and lifecycle governance.
-
-Inherited Moirai-era PDFs, images, and log screenshots are excluded from this public-clean package. See `docs/LEGACY_MATERIALS_EXCLUDED.md`.
 
 ## Repository Structure
 
@@ -208,48 +197,6 @@ Key inherited modules:
 - `rediris/task_center/`: task lifecycle, miner selection, scoring, and coordination foundation.
 - `rediris/common/`: shared config, Bittensor, database, auth, crypto, middleware, logging, and utility paths.
 
-## Reading The Repo Locally
-
-For a safe local read:
-
-1. Start with this `README.md`.
-2. Read `docs/PUBLIC_CLAIMS_BOUNDARY.md`.
-3. Read `docs/RUNTIME_HOLD_AND_NO_CHAIN_TEST_PLAN.md`.
-4. Read `docs/KNOWN_LIMITATIONS.md`.
-5. Read `docs/README_CN.md` if Chinese explanation is needed.
-6. Read schema docs under `docs/`.
-7. Read sample JSON under `examples/`.
-8. Treat `rediris/*/README.md` as inherited module notes with RedIris caveats.
-9. Read `docs/LEGACY_MATERIALS_EXCLUDED.md` for legacy material exclusion context.
-
-Do not treat config examples as live deployment instructions. Do not run wallet, subtensor, external endpoint, HuggingFace upload, provider/model calls, or `set_weights` flows unless a future development task explicitly authorizes and isolates that runtime.
-
-## Local Development Boundary
-
-This candidate keeps inherited runtime dependencies in place for developer handoff. U4/U4.1 did not add new dependencies.
-
-Before any real execution, a future developer should:
-
-- read `docs/RUNTIME_HOLD_AND_NO_CHAIN_TEST_PLAN.md`;
-- read `docs/KNOWN_LIMITATIONS.md`;
-- resolve missing/incomplete imports, including absent `rediris/common/models/`;
-- replace placeholder configs with a controlled local config;
-- keep secrets out of the repository;
-- keep `rediris` as the package name unless a future migration has a specific compatibility reason to change it;
-- run only no-chain, no-wallet local tests first;
-- document any external endpoint, wallet, provider, model, or chain use in a non-sensitive ledger.
-
-## Documentation And Examples
-
-- `docs/README_CN.md`: Chinese public/team explanation.
-- `docs/PUBLIC_CLAIMS_BOUNDARY.md`: claims boundary for judges and public readers.
-- `docs/RUNTIME_HOLD_AND_NO_CHAIN_TEST_PLAN.md`: runtime HOLD and no-chain plan.
-- `docs/KNOWN_LIMITATIONS.md`: current known limitations.
-- `docs/CANON_DELTA_PACK_SCHEMA.md`: schema notes for miner-side pack types.
-- `docs/CANON_INTEGRITY_SIGNAL_SCHEMA.md`: schema notes for validator outputs.
-- `examples/canon_delta_pack.example.json`: illustrative miner package.
-- `examples/canon_integrity_signal.example.json`: illustrative validator signal.
-- `docs/LEGACY_MATERIALS_EXCLUDED.md`: boundary for excluded Moirai-era PDFs/assets.
 
 ## License
 
