@@ -14,7 +14,7 @@ Miners propose state-transition packages for a living character/world system. Va
 
 This repository is an adaptation candidate / concept implementation base.
 
-RedIris builds on prior Moirai-era public repository and hackathon/subnet experiment evidence. The current codebase preserves the original Python/FastAPI/Bittensor-oriented miner, validator, task-center, and common module structure for future development.
+ The current codebase preserves the original Python/FastAPI/Bittensor-oriented miner, validator, task-center, and common module structure for future development.
 
 Start here before public review:
 
@@ -36,7 +36,6 @@ Important boundary:
 - This repository does not prove official partner endorsement.
 - This repository does not prove final visual canon for any character.
 
-The internal Python package name is now `rediris` in this candidate. The inherited Moirai-era module structure is preserved, but imports and package paths have been renamed to match the RedIris project name.
 
 ## What RedIris Is
 
