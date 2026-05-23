@@ -1,0 +1,58 @@
+# Red Iris candidate validator config example.
+# This is a placeholder for future controlled local development.
+# It is not evidence of live deployment, wallet use, subtensor calls, set_weights, or emissions.
+
+wallet:
+  name: REPLACE_WITH_LOCAL_WALLET_NAME
+  hotkey: REPLACE_WITH_LOCAL_HOTKEY_NAME
+
+bittensor:
+  # Fill only in an explicitly authorized future chain/devnet task.
+  netuid: null
+  network: local_or_devnet_placeholder
+  chain_endpoint: null
+
+task_center:
+  # Prefer localhost for no-chain development smoke tests.
+  url: http://localhost:8000
+
+axon:
+  enabled: false
+  ip: 127.0.0.1
+  port: 8002
+  external_ip: null
+
+validator:
+  sync_interval: 60
+  validators_per_task: 1
+  weight_sync_interval: 3600
+
+auto_update:
+  enabled: false
+  github_repo: null
+  branch: main
+  check_interval: 300
+  restart_delay: 10
+
+models:
+  clip:
+    model_name: REPLACE_WITH_AUTHORIZED_LOCAL_CLIP_MODEL
+    device: cpu
+
+  text_encoder:
+    model_name: REPLACE_WITH_AUTHORIZED_LOCAL_TEXT_ENCODER
+
+  aesthetic:
+    model_name: REPLACE_WITH_AUTHORIZED_LOCAL_AESTHETIC_MODEL
+
+  nsfw:
+    model_name: REPLACE_WITH_AUTHORIZED_LOCAL_SAFETY_MODEL
+
+scoring:
+  k: 3
+  baseline: 3.5
+  time_decay_rate: 0.005
+
+logging:
+  level: INFO
+  file: logs/validator.log

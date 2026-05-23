@@ -1,0 +1,75 @@
+{
+  "signal_id": "cis_local_demo_001",
+  "schema_version": "rediris.canon_integrity_signal.v0.1",
+  "challenge_id": "challenge_seed_character_alpha_001",
+  "pack_id": "cdp_local_demo_001",
+  "pack_type": "Canon Delta Pack",
+  "canon_state_ref": "canon_state_seed_demo_v0",
+  "validator_ref": "local_validator_placeholder",
+  "scoring_dimensions": {
+    "canon_compatibility": {
+      "score": 18,
+      "weight": 20,
+      "reason": "Fits visible and hidden continuity checks."
+    },
+    "character_identity_consistency": {
+      "score": 18,
+      "weight": 20,
+      "reason": "Preserves seed_character_alpha's stated memory-guardian role."
+    },
+    "creative_contribution": {
+      "score": 13,
+      "weight": 15,
+      "reason": "Adds a usable future hook."
+    },
+    "source_memory_recall": {
+      "score": 14,
+      "weight": 15,
+      "reason": "Uses allowed memory references."
+    },
+    "performance_continuity": {
+      "score": 9,
+      "weight": 10,
+      "reason": "Maintains the stated persona rhythm."
+    },
+    "future_evolvability": {
+      "score": 9,
+      "weight": 10,
+      "reason": "Creates repairable branch potential."
+    },
+    "safety_rights_overcopy_risk": {
+      "score": 10,
+      "weight": 10,
+      "reason": "No external rights or overcopy claim."
+    }
+  },
+  "total_score": 91,
+  "hidden_test_trace": {
+    "hidden_canon_fact_check": "pass_non_sensitive",
+    "contradiction_trap": "pass_non_sensitive",
+    "style_drift_test": "pass_non_sensitive",
+    "overcopy_trap": "pass_non_sensitive"
+  },
+  "penalty_flags": [],
+  "decision": "accept",
+  "lifecycle_impact": {
+    "character": "seed_character_alpha",
+    "from": "seed",
+    "to": "active",
+    "ledger_event": "accepted_canon_delta"
+  },
+  "weight_candidate": {
+    "chain_submitted": false,
+    "wallet_used": false,
+    "subtensor_called": false,
+    "set_weights_called": false,
+    "live_emissions_claimed": false
+  },
+  "boundary": {
+    "local_demo_only": true,
+    "rights_cleared_claim": false,
+    "production_ready_claim": false,
+    "final_canon_claim": false,
+    "final_visual_canon_claim": false
+  }
+}

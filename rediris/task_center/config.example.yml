@@ -1,0 +1,51 @@
+# Red Iris candidate task-center config example.
+# This is a placeholder for future controlled local development.
+# It is not evidence of live deployment, wallet use, subtensor calls, set_weights, or emissions.
+
+database:
+  url: postgresql://rediris:rediris@localhost:5432/rediris
+
+redis:
+  url: redis://localhost:6379/0
+
+bittensor:
+  # Fill only in an explicitly authorized future chain/devnet task.
+  netuid: null
+  network: local_or_devnet_placeholder
+  chain_endpoint: null
+
+wallet:
+  name: REPLACE_WITH_LOCAL_WALLET_NAME
+  hotkey: REPLACE_WITH_LOCAL_HOTKEY_NAME
+
+task_center:
+  validators_per_audit_task: 1
+  miner_selection_count: 3
+  min_stake_requirement: 0.0
+  miner_health_check_interval: 600
+  miner_heartbeat_timeout: 120
+  fallback_validators: []
+
+api:
+  key: null
+  allowed_ips:
+    - 127.0.0.1
+    - ::1
+
+auto_update:
+  enabled: false
+  github_repo: null
+  branch: main
+  check_interval: 300
+  restart_delay: 10
+
+reward:
+  # Placeholder ratios inherited for future development discussion only.
+  treasury_ratio: 0.10
+  miner_pool_ratio: 0.90
+  text_task_ratio: 0.30
+  image_task_ratio: 0.70
+
+logging:
+  level: INFO
+  file: logs/task_center.log

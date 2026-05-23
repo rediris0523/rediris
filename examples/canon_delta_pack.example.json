@@ -1,0 +1,41 @@
+{
+  "pack_id": "cdp_local_demo_001",
+  "pack_type": "Canon Delta Pack",
+  "schema_version": "rediris.canon_pack.v0.1",
+  "canon_state_ref": "canon_state_seed_demo_v0",
+  "challenge_id": "challenge_seed_character_alpha_001",
+  "delta_type": "scene",
+  "miner_claim": {
+    "author_type": "miner",
+    "provenance_note": "local illustrative example only; no live subnet, wallet, chain, provider call, rights-clearance claim, or final canon claim"
+  },
+  "affected_characters": [
+    "seed_character_alpha"
+  ],
+  "source_memory_refs": [
+    "seed_character_alpha_identity",
+    "world_rule_memory_guardian"
+  ],
+  "proposed_state_transition": {
+    "summary": "seed_character_alpha rejects a tempting false memory and records the contradiction for later repair.",
+    "scene_excerpt": "seed_character_alpha pauses before the archive mirror. The memory is beautiful, but its timestamp is impossible. The character marks it as a false light instead of letting it become canon."
+  },
+  "continuity_rationale": "The proposal preserves the seed character's memory-guardian role without making a final character-canon or visual-canon claim.",
+  "creative_contribution": "Adds a reusable future hook around false-memory detection.",
+  "future_hooks": [
+    "false_memory_audit_branch",
+    "archive_mirror_contradiction"
+  ],
+  "risk_statement": {
+    "rights_risk": "none_claimed",
+    "overcopy_risk": "low",
+    "safety_risk": "low",
+    "regression_risk": "needs_hidden_canon_check",
+    "final_canon_claim": false
+  },
+  "commit_reveal": {
+    "commit_hash": "placeholder_no_live_commit",
+    "reveal_status": "local_demo_only"
+  },
+  "acceptance_target": "accept"
+}

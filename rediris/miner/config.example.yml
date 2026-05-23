@@ -1,0 +1,68 @@
+# Red Iris candidate miner config example.
+# This is a placeholder for future controlled local development.
+# It is not evidence of live deployment, wallet use, subtensor calls, or emissions.
+
+wallet:
+  name: REPLACE_WITH_LOCAL_WALLET_NAME
+  hotkey: REPLACE_WITH_LOCAL_HOTKEY_NAME
+
+bittensor:
+  # Fill only in an explicitly authorized future chain/devnet task.
+  netuid: null
+  network: local_or_devnet_placeholder
+  chain_endpoint: null
+
+task_center:
+  # Prefer localhost for no-chain development smoke tests.
+  url: http://localhost:8000
+
+axon:
+  enabled: false
+  ip: 127.0.0.1
+  port: 8001
+  external_ip: null
+
+miner:
+  min_stake: 0.0
+  gpu_count: 1
+  max_queue_size: 100
+  max_training_jobs: 1
+  max_test_jobs: 1
+
+auto_update:
+  enabled: false
+  github_repo: null
+  branch: main
+  check_interval: 1200
+  restart_delay: 30
+
+huggingface:
+  # Keep uploads disabled for local documentation/demo review.
+  skip_upload: true
+  token: null
+  username: null
+
+training:
+  text:
+    base_model: REPLACE_WITH_AUTHORIZED_LOCAL_OR_PUBLIC_MODEL
+    default_lora_rank: 16
+    default_lora_alpha: 32
+    default_num_train_epochs: 1
+    default_iteration_count: 100
+    default_batch_size: 1
+    default_learning_rate: 2e-4
+    default_max_length: 512
+    default_save_steps: 100
+    default_save_total_limit: 1
+
+datasets:
+  text:
+    repository_id: REPLACE_WITH_AUTHORIZED_LOCAL_OR_PUBLIC_DATASET
+    question_column: question
+    answer_column: answer
+    data_format: jsonl
+
+logging:
+  level: INFO
+  file: logs/miner.log
+
