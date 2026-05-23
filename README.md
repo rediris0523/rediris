@@ -65,7 +65,6 @@ RedIris is not:
 - a legal rights-clearance system;
 - a claim of current deployment;
 - a claim that the 13 seed characters have final public canon;
-- a claim that inherited Moirai-era PDFs or images are RedIris public proof.
 
 ## Core Objects
 
